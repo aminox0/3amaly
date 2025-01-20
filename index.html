@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3amaly with Badr - Employee Task Reporter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">3amaly with Badr</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Submit Report</a>
+      <a href="employees.html">View Reports</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Employee Task Report</h1>
+    
+    <form id="reportForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tasks">Tasks Completed:</label>
+        <textarea id="tasks" name="tasks" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="projectLink">Project Download Link:</label>
+        <input type="url" id="projectLink" name="projectLink" required>
+      </div>
+
+      <div class="form-group">
+        <label for="timeSpent">Time Spent (hours):</label>
+        <input type="number" id="timeSpent" name="timeSpent" min="0" step="0.5" required>
+      </div>
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
